@@ -1,26 +1,25 @@
 # Simulation of interest rate scenarios of US 10-year treasury yield using the Schöbel-Zhu Hull-White (SZHW) model
 
-#### Name: Sameer Dhoke
-#### Date: 04-January-2023
-
+### Name: Sameer Dhoke
+### Date: 04-January-2023
 
 
 Table of Content:
-#### 1 Description
-#### 2 Theoretical Background and Mathematical Expression of the Schöbel-Zhu Hull-White (SZHW) Model
+##### 1 Description
+##### 2 Theoretical Background and Mathematical Expression of the Schöbel-Zhu Hull-White (SZHW) Model
 * Hull-White model <br>
 * Black-Scholes model
 * Black-Scholes Hull-White model
 * Schöbel-Zhu Hull-White (SZHW) model
 * Exploring the Schöbel-Zhu Hull-White (SZHW) Model as a Hybrid Asset Model
-#### 3 Project Structure
+##### 3 Project Structure
 * 3.1 Directory Structure
 * 3.2 Why 2 methodologies used in Interest Rate Scenario Generation?
-#### 4 Project Details
+##### 4 Project Details
 * SZHW Model Part A: Framework, Code Implementation and Output Analysis
 * SZHW Model Part B: Framework, Code Implementation and Output Analysis
-#### 5 Scope of the Project
-#### 6 References
+##### 5 Scope of the Project
+##### 6 References
 
 
 ### Description:
