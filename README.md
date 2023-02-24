@@ -27,7 +27,7 @@
 6. References
 
 
-#### Description
+### Description
 
 This project analyzes US 10-year treasury yields using the Schöbel-Zhu Hull-White (SZHW) model. The primary purpose of this project is to develop a simulation model to analyze the impact of different economic scenarios on interest rates and estimate the value of a call option under each scenario. I have divided the project into Part A and Part B.
 
@@ -39,7 +39,7 @@ The Schöbel-Zhu Hull-White model is a popular financial model for interest rate
 
 This project aims to provide a comprehensive framework for analyzing US 10-year treasury yields using the Schöbel-Zhu Hull-White (SZHW) model and to demonstrate how this model can be used to evaluate the impact of various economic scenarios on interest rates and estimate the value of a call option under each scenario.
 
-#### Theoretical Background and Mathematical Expression of the Schöbel-Zhu Hull-White (SZHW) Model
+### Theoretical Background and Mathematical Expression of the Schöbel-Zhu Hull-White (SZHW) Model
 
 ##### Description of the Schöbel-Zhu Hull-White (SZHW) Model
 
