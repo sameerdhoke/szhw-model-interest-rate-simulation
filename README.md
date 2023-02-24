@@ -37,7 +37,7 @@ In Part B, I incorporate the impact of economic indicators into the scenarios an
 
 The Schöbel-Zhu Hull-White model is a popular financial model for interest rate derivatives that extends the popular Hull-White model by incorporating the stochastic volatility of the interest rate. This model has several advantages, including being able to produce more realistic yield curves and having the ability to incorporate the impact of various economic indicators on interest rates. The disadvantage is that it can be computationally expensive and may require more data for calibration.
 
-This project aims to provide a comprehensive framework for analyzing US 10-year treasury yields using the Schöbel-Zhu Hull-White (SZHW) model and to demonstrate how this model can be used to evaluate the impact of various economic scenarios on interest rates and estimate the value of a call option under each scenario.
+This project aims to provide a comprehensive framework for analyzing US 10-year treasury using the Schöbel-Zhu Hull-White (SZHW) model and to demonstrate how this model can be used to evaluate the impact of various economic scenarios on interest rates and estimate the value of a call option under each scenario.
 
 ### Theoretical Background and Mathematical Expression of the Schöbel-Zhu Hull-White (SZHW) Model
 
