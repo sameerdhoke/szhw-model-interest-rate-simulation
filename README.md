@@ -4,9 +4,8 @@
 #### Date: 04-January-2023
 
 
-[[toc]]
 
-
+Table of Content:
 #### 1 Description
 #### 2 Theoretical Background and Mathematical Expression of the Schöbel-Zhu Hull-White (SZHW) Model
 * Hull-White model <br>
