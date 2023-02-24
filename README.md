@@ -31,9 +31,9 @@
 
 This project analyzes US 10-year treasury yields using the Schöbel-Zhu Hull-White (SZHW) model. The primary purpose of this project is to develop a simulation model to analyze the impact of different economic scenarios on interest rates and estimate the value of a call option under each scenario. I have divided the project into Part A and Part B.
 
-In Part A, we first gather historical interest rate data and calibrate the SZHW model. Then, we develop a simulation model to generate interest rate scenarios, analyze the simulated results, and estimate the coefficients for each independent variable using a linear regression model. We also evaluate the impact of interest rate scenarios using the Black-Scholes model to estimate the value of a call option.
+In Part A, I first gather historical interest rate data and calibrate the SZHW model. Then, I develop a simulation model to generate interest rate scenarios, analyze the simulated results, and estimate the coefficients for each independent variable using a linear regression model. I also evaluate the impact of interest rate scenarios using the Black-Scholes model to estimate the value of a call option.
 
-In Part B, we incorporate the impact of economic indicators into the scenarios and then develop the simulation model to evaluate the effect of interest rate scenarios and estimate the value of a call option under each scenario. We also validate and analyze the performance of the simulation model by comparing the simulated yields with historical yields.
+In Part B, I incorporate the impact of economic indicators into the scenarios and then develop the simulation model to evaluate the effect of interest rate scenarios and estimate the value of a call option under each scenario. I also validate and analyze the performance of the simulation model by comparing the simulated yields with historical yields.
 
 The Schöbel-Zhu Hull-White model is a popular financial model for interest rate derivatives that extends the popular Hull-White model by incorporating the stochastic volatility of the interest rate. This model has several advantages, including being able to produce more realistic yield curves and having the ability to incorporate the impact of various economic indicators on interest rates. The disadvantage is that it can be computationally expensive and may require more data for calibration.
 
@@ -221,7 +221,7 @@ Part B: In this approach, the impact of each independent variable on historical 
 
 * Historical Comparison to Analyze the Simulated Results (Calculating MAE, RMSE, and Correlation Coefficient)
 
-    Now we compare the simulated results ("sim_df" data frame) with historical data ("Yield" column from "df" data frame) to see how the simulated interest rates align with the actual rates. This can be a way to check the model's accuracy and help validate the assumptions used in the simulation. One possible approach would be to use statistical measures such as mean absolute error, root mean squared error, or correlation coefficient to compare the simulated and historical interest rates.
+    Now I compare the simulated results ("sim_df" data frame) with historical data ("Yield" column from "df" data frame) to see how the simulated interest rates align with the actual rates. This can be a way to check the model's accuracy and help validate the assumptions used in the simulation. One possible approach would be to use statistical measures such as mean absolute error, root mean squared error, or correlation coefficient to compare the simulated and historical interest rates.
 
     Output: <br>
     ![Descriptive Statistics of historical yields - Part A](output-screenshots/mae_rmse_corr_df_a.png)
@@ -246,7 +246,7 @@ Part B: In this approach, the impact of each independent variable on historical 
 
     * Calculating a Probability of Default or Expected Loss Based on the Aggregated Results
 
-    I calculate each scenario's expected yield and default probability based on the aggregated yields. We assume a recovery rate of 40% for default cases. We then calculate the total expected loss and total expected yield across all scenarios.
+    I calculate each scenario's expected yield and default probability based on the aggregated yields. I assume a recovery rate of 40% for default cases. I then calculate the total expected loss and total expected yield across all scenarios.
 
     Output: <br>
     ![Prob of Default & Expected Loss of Aggregated Scenario - 1](output-screenshots/prob_default_exp_loss_scenario_aggregation_1.png)
@@ -259,7 +259,7 @@ Part B: In this approach, the impact of each independent variable on historical 
 
 * Step 5: Estimating the Coefficients for Each Independent Variable Using a Linear Regression Model
 
-    In this step, we estimate the coefficients for each independent variable using a linear regression model. The independent variables include the US GDP growth rate, personal consumption expenditure (PCE), US inflation rate, Federal funds rate, unemployment rate, change in US government debt, consumer confidence index, and trade balance. The dependent variable is the US 10-year Treasury yield.
+    In this step, I estimate the coefficients for each independent variable using a linear regression model. The independent variables include the US GDP growth rate, personal consumption expenditure (PCE), US inflation rate, Federal funds rate, unemployment rate, change in US government debt, consumer confidence index, and trade balance. The dependent variable is the US 10-year Treasury yield.
 
     Output: <br>
     ![Regression Summary - Part A](output-screenshots/regression_summary_a.png)
@@ -313,7 +313,7 @@ Part B: In this approach, the impact of each independent variable on historical 
 
     * Using These Estimated Call Prices to Evaluate How the Value of the Option Changes under Different Yield Scenarios
 
-    Sensitivity analysis: We perform sensitivity analysis to see how changes in the input parameters (such as interest rates, volatility, and time to maturity) affect the call option prices. This can help identify the most critical factors driving the options prices and assess the risk associated with different scenarios.
+    Sensitivity analysis: I perform sensitivity analysis to see how changes in the input parameters (such as interest rates, volatility, and time to maturity) affect the call option prices. This can help identify the most critical factors driving the options prices and assess the risk associated with different scenarios.
 
     Output: <br>
     ![Sensitivity Analysis](output-screenshots/sensitivity_analysis_call_prices.png)
