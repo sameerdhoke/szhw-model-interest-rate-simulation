@@ -29,15 +29,15 @@
 
 ### Description
 
-This project analyzes US 10-year treasury yields using the Schöbel-Zhu Hull-White (SZHW) model. The primary purpose of this project is to develop a simulation model to analyze the impact of different economic scenarios on interest rates and estimate the value of a call option under each scenario. I have divided the project into Part A and Part B.
+This study uses the Schöbel-Zhu Hull-White (SZHW) model to examine US 10-year Treasury yields. Creating a simulation model to explore the effects of various economic scenarios on interest rates and calculate the value of a call option for each scenario is the primary goal of this project. The project is separated into Part A and Part B.
 
-In Part A, I first gather historical interest rate data and calibrate the SZHW model. Then, I develop a simulation model to generate interest rate scenarios, analyze the simulated results, and estimate the coefficients for each independent variable using a linear regression model. I also evaluate the impact of interest rate scenarios using the Black-Scholes model to estimate the value of a call option.
+I initially acquired historical interest rate information in Part A before calibrating the SZHW model. Finally, I create a simulation model to create interest rate scenarios, examine the simulation results, and use a linear regression model to estimate the coefficients for each independent variable. The Black-Scholes model, which calculates the value of a call option, is another tool I use to assess the effects of various interest rate scenarios.
 
-In Part B, I incorporate the impact of economic indicators into the scenarios and then develop the simulation model to evaluate the effect of interest rate scenarios and estimate the value of a call option under each scenario. I also validate and analyze the performance of the simulation model by comparing the simulated yields with historical yields.
+In Part B, I factor in the effects of economic indicators when creating the scenarios. After that, I create the simulation model to assess the impact of interest rate scenarios and calculate the value of a call option under each one. I also validate and evaluate the simulation model's performance by contrasting the simulated yields with actual yields.
 
 The Schöbel-Zhu Hull-White model is a popular financial model for interest rate derivatives that extends the popular Hull-White model by incorporating the stochastic volatility of the interest rate. This model has several advantages, including being able to produce more realistic yield curves and having the ability to incorporate the impact of various economic indicators on interest rates. The disadvantage is that it can be computationally expensive and may require more data for calibration.
 
-This project aims to provide a comprehensive framework for analyzing US 10-year treasury using the Schöbel-Zhu Hull-White (SZHW) model and to demonstrate how this model can be used to evaluate the impact of various economic scenarios on interest rates and estimate the value of a call option under each scenario.
+This project aims to provide a comprehensive framework for analyzing US 10-year treasury using the SZHW model and to demonstrate how this model can be used to evaluate the impact of various economic scenarios on interest rates and estimate the value of a call option under each scenario.
 
 ### Theoretical Background and Mathematical Expression of the Schöbel-Zhu Hull-White (SZHW) Model
 
@@ -45,10 +45,10 @@ This project aims to provide a comprehensive framework for analyzing US 10-year 
 
 * Black-Scholes Hull-White model and Schöbel-Zhu Hull-White (SZHW) model
 
-    The Black-Scholes Hull-White model combines the Black-Scholes option pricing model and the Hull-White interest rate model. It is used to value European options - options that can only be exercised on the expiration date - on underlying assets subject to interest rate changes. The model considers the underlying asset's volatility and the interest rate volatility modeled by the Hull-White model. <br>
-    The Schöbel-Zhu Hull-White (SZHW) model is a more sophisticated extension of the Black-Scholes Hull-White model that accounts for additional factors such as mean reversion and the impact of interest rate volatility on the underlying asset's price. The SZHW model values options on more complex underlying assets, such as bonds and credit derivatives. <br>
-    In both models, the Hull-White interest rate model is used to model the behavior of interest rates over time. This model considers factors such as mean reversion and interest rate volatility, which can significantly impact the value of financial instruments. <br>
-    Both the Black-Scholes Hull-White model and the Schöbel-Zhu Hull-White model are widely used in finance and provide a more accurate representation of the value of financial instruments compared to models that do not take into account interest rate dynamics. These models are helpful for pricing options, bonds, and risk management.
+    The Hull-White interest rate model and the Black-Scholes option pricing model are combined to form the Black-Scholes Hull-White model. It is used to value European options on underlying assets susceptible to interest rate movements, which are options that can only be executed on the expiration date. The model considers the Hull-White model's representation of interest rate volatility and that of the underlying asset. <br>
+The Schöbel-Zhu Hull-White (SZHW) model is a more complex variation of the Black-Scholes Hull-White model that considers other elements like mean reversion and the price impact of interest rate volatility. Options on more complicated underlying assets, including bonds and credit derivatives, are valued using the SZHW model. <br>
+The Hull-White interest rate model is utilized in both models to simulate interest rate behavior over time. The value of financial instruments can be significantly impacted by factors like mean reversion and interest rate volatility, which are taken into account by this model. <br>
+Compared to models that do not consider interest rate dynamics, the Black-Scholes Hull-White model and the SZH model are frequently used in finance and offer a more realistic representation of the value of financial assets. These models are helpful for risk management, option pricing, and bond pricing.
 
 * Mathematical theory behind the Schöbel-Zhu Hull-White (SZHW) model
 
@@ -98,9 +98,9 @@ This project aims to provide a comprehensive framework for analyzing US 10-year 
 
     1. Mean reversion: Like the Hull-White model, the SZHW model assumes that the interest rate will revert towards a long-term mean level over time.
     2. Interest rate volatility: The SZHW model considers the impact of interest rate volatility on the underlying asset's price. This impact is not captured by the Hull-White model.
-    3. Risk-free rate: The SZHW model assumes the risk-free rate is constant over time.
+    3. The risk-free rate is constant over time.
     4. Market efficiency: The SZHW model assumes that the market is efficient and that all available information is immediately reflected in the underlying asset's current price.
-    5. European options: The SZHW model uses the Black-Scholes option pricing formula to price European options, assuming that the underlying asset's price follows a lognormal distribution.
+    5. The SZHW model uses the Black-Scholes option pricing formula to price European options, assuming that the underlying asset's price follows a lognormal distribution.
     6. It's important to note that these assumptions are idealized and may not always hold in real-world market conditions.
 
     * The option pricing component of the SZHW model uses the Black-Scholes option pricing formula, a widely used model for pricing European options. The Black-Scholes formula considers the underlying asset's price, the strike price, the time to expiration, the volatility of the underlying asset, and the risk-free interest rate.
